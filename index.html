@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Learn Library</title>
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"> -->
+
+</head>
+
+<body>
+    <!-- page loader start -->
+       <div class="page-loader">
+        <div></div>
+        <div></div>
+        <div></div>
+       </div>
+     <!-- page loader end -->
+    <!-- background circles start -->
+    <div class="bg-circles">
+        <div class="circle-1"></div>
+        <div class="circle-2"></div>
+        <div class="circle-3"></div>
+        <div class="circle-4"></div>
+    </div>
+    <!-- background circles end -->
+
+    <!-- overlay start -->
+    <div class="overlay">
+
+    </div>
+    <!-- overlay end -->
+
+    <!-- main start -->
+    <div class="main ">
+    <!-- header start  -->
+       <header class="header">
+        <div class="container">
+            <div class="row flex-end">
+                <button type="button" class="nav-toggler">
+                    <span></span>
+                </button>
+                <nav class="nav">
+                    <div class="nav-inner">
+                        <ul>
+                            <li><a href="#home" class="nav-item link-item">Home</a></li>
+                            <li><a href="#library" class="nav-item link-item">Library</a></li>
+                            <li><a href="#sign-up" class="nav-item link-item">Sign up </a></li> 
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+       </header>
+      <!-- header end  -->
+
+        <!-- Home section Start  -->
+        <section class="home-section align-items-center  " id="home">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="home-text">
+                        <p>Hello, Readers</p>
+                        <h1 class="mb-4">Welcome to LearnLibrary</h1>
+                        <h2 style="padding-top: 10px; padding-bottom: 10px;"> where books are endless </h2>
+                        <a href="#library" class="btn link-item" style="margin-right: 30px;  margin-top: 10px;">Search Books </a>
+                      
+                        <div class="d-flex align-items-center border-start border-5 border-primary px-3">
+                             <div class="counter" style="display:flex;">
+                                <h1 class="flex-shrink-0  display-4 text-primary pt-5 mb-4 mt-5 num" data-val="1000" data-toggle="counter-up">000</h1 >
+                                    <h1 class="flex-shrink-0  display-4 text-primary" >+</h1 >
+                             </div>
+                           
+                                 
+                            <div class="ps-4 mt-2">
+                                <p>People Visited Our Library </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="home-img align-items-center ">
+                       <img  src="img/main-image.png">
+                            
+                       
+                    </div>
+                </div>
+            </div>
+           
+        </section>
+        <!-- Home section ends  -->
+
+   
+
+        <!-- library  section starts  -->
+        <section class="library-section sec-padding" id="library" >
+            <div class="container">
+                <div class="row">
+                   <div class="section-title">
+                    <h2>Library</h2>
+                   </div>
+                </div>
+                 <!-- search bar , filters  -->
+                <div class=" row library-section-input" >
+                        <div class=" input-group  search-input" >
+                               <input id="book-name" type="text" class="input-control " placeholder="Search Books...">
+                               <button id="submit-button" class="btn btn-secondary" type="button" >
+                                    <i class="fa fa-search"></i>
+                                </button>
+                        </div>
+                       
+                        <div class="cart ">
+                             
+                               <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="filtersDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Filters
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="filtersDropdown">
+                                  <!-- Dropdown menu items -->
+                                  <a class="dropdown-item" href="#">Authors</a>
+                                  <a class="dropdown-item" href="#">Genre</a>
+                                  <a class="dropdown-item" href="#"></a>
+                                </div>
+                              </div>
+                               <button class="btn btn-secondary" type="button" ><i class="fa fa-shopping-cart" aria-hidden="true"></i> </button>
+
+                         </div>
+                </div>
+          <!-- show all the books by api -->
+                <div class="row " id="booksdiv">
+                
+            
+
+
+                   
+
+                </div>
+            </div>
+
+        </section>
+        <!-- library section ends  -->
+      
+        <!-- sign in  section starts -->
+        <section class="contact-section sec-padding " id="sign-up">
+            <div class="container" id="signupDiv">
+                <div class="row">
+                    <div class="section-title">
+                        <h2>Sign Up</h2>
+                    </div>
+                </div>
+                
+                    <div class="contact-form">
+                       
+                        
+        <form class="login-form" >
+          
+                <a href="#" class="btn-face  ">
+                  <i class="fab fa-facebook"></i>  Facebook
+                </a>
+                  
+                <a href="#" class="btn-google">
+                  <i class="fab fa-google-plus-g"></i>  Google
+                </a>
+             
+                <div class="row">
+                    <div class="input-group">
+                        <input type="text" placeholder="Full Name" class="input-control" id="name" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" placeholder="Email" class="input-control" id="email" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" placeholder="Password" class="input-control" id="password" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" placeholder="Confirm Password" class="input-control" id="confirm-password" required>
+                    </div>
+                    <div class="submit-btn">
+                        <button type="button" class="btn" id="sign-up-button">Sign Up</button>
+                    </div>
+                </div>
+           
+            <div class="text-center w-full">
+              <span class="txt2">Already  a member ?</span>
+              <a  id="move-to-sign" class="txt2">Sign In</a>
+  
+            </div>
+
+          </form>
+                    </div>
+                    
+                
+            </div>
+
+            <div class="container" id="loginDinv" style="display: none;">
+                <div class="row">
+                    <div class="section-title">
+                        <h2>Sign In</h2>
+                    </div>
+                </div>
+                
+                    <div class="contact-form">
+                       
+                        
+        <form class="login-form" >
+          
+                <a href="#" class="btn-face  ">
+                  <i class="fab fa-facebook"></i>  Facebook
+                </a>
+                  
+                <a href="#" class="btn-google">
+                  <i class="fab fa-google-plus-g"></i>  Google
+                </a>
+             
+                <div class="row">
+                    
+                    <div class="input-group">
+                        <input type="email" placeholder="Email" class="input-control" id="email" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" placeholder="Password" class="input-control" id="password" required>
+                    </div>
+                   
+                    <div class="submit-btn">
+                        <button type="button" class="btn" id="sign-up-button">Sign In</button>
+                    </div>
+                </div>
+           
+            <div class="text-center w-full">
+              <span class="txt2">Not a member yet ?</span>
+              <a id="move-to-signup" href="#" class="txt2">Sign Up</a>
+    
+            </div>
+    
+          </form>
+                    </div>
+                    
+                
+            </div>
+        </section>
+
+        <!-- sign in  section ends -->
+
+
+    </div>
+    <!-- Main end -->
+
+    <!-- library item details popup start  -->
+         <div class="library-popup">
+            <div class="pp-inner">
+                <div class="pp-content">
+                    <div class="pp-header">
+                        <button type="button" class="btn pp-close" ><i class="fas fa-times"></i></button>
+                        <div class="pp-thumbnail">
+                            <img src="img/3.jpg" alt="pp-thumbnail" >
+                        </div>
+                        <h3></h3>
+                    </div>
+                    <div class="pp-body">
+                    </div>
+                </div>
+            </div>
+
+         </div>
+    <!-- library item detail popup end  -->
+  <script src="js/script.js"></script>
+  <script type="module" src="js/firebase.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+  <script src="js/counter.js"></script>
+</body>
+
+</html>
